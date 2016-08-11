@@ -899,7 +899,11 @@ class Issue < ActiveRecord::Base
   # Returns an array of statuses that user is able to apply
   def new_statuses_allowed_to(user=User.current, include_default=false)
     if new_record? && @copied_from
-      [default_status, @copied_from.status].compact.uniq.sort
+      if Setting.reset_issue_status_on_copy?
+        [default_status]
+      else
+        [default_status, @copied_from.status].compact.uniq.sort
+      end
     else
       initial_status = nil
       if new_record?

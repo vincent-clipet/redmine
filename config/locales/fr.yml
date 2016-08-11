@@ -450,6 +450,7 @@ fr:
   setting_force_default_language_for_anonymous: Forcer la langue par défault pour les utilisateurs anonymes
   setting_force_default_language_for_loggedin: Forcer la langue par défault pour les utilisateurs identifiés
   setting_link_copied_issue: Lier les demandes lors de la copie
+  setting_reset_issue_status_on_copy: Réinitialiser le statut lors d'une copie de demande
   setting_max_additional_emails: Nombre maximal d'adresses email additionnelles
   setting_search_results_per_page: Résultats de recherche affichés par page
   setting_attachment_extensions_allowed: Extensions autorisées
